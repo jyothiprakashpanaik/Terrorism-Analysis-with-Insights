@@ -98,6 +98,9 @@ def create_app8_ui():
   # Create the UI of the Webpage here
   main_layout = html.Div([
   html.H1('Terrorism Analysis with Insights', id='Main_title', style={
+  																	  "background-image":"url('https://images.unsplash.com/photo-1568850716322-66b63ccd5d10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=647&q=80')",
+  																	  "height":'400px',
+  																	  "width":"100%",
                                                                       "color":"red",
                                                                       "background-color":"lightgreen",
                                                                       "padding":"0",
@@ -219,29 +222,29 @@ def update_app9_ui(Tabs, month_value, date_value,region_value,country_value,stat
     fig = None
      
     if Tabs == "Map":
-        print("Data Type of month value = " , str(type(month_value)))
-        print("Data of month value = " , month_value)
+        # print("Data Type of month value = " , str(type(month_value)))
+        # print("Data of month value = " , month_value)
         
-        print("Data Type of Day value = " , str(type(date_value)))
-        print("Data of Day value = " , date_value)
+        # print("Data Type of Day value = " , str(type(date_value)))
+        # print("Data of Day value = " , date_value)
         
-        print("Data Type of region value = " , str(type(region_value)))
-        print("Data of region value = " , region_value)
+        # print("Data Type of region value = " , str(type(region_value)))
+        # print("Data of region value = " , region_value)
         
-        print("Data Type of country value = " , str(type(country_value)))
-        print("Data of country value = " , country_value)
+        # print("Data Type of country value = " , str(type(country_value)))
+        # print("Data of country value = " , country_value)
         
-        print("Data Type of state value = " , str(type(state_value)))
-        print("Data of state value = " , state_value)
+        # print("Data Type of state value = " , str(type(state_value)))
+        # print("Data of state value = " , state_value)
         
-        print("Data Type of city value = " , str(type(city_value)))
-        print("Data of city value = " , city_value)
+        # print("Data Type of city value = " , str(type(city_value)))
+        # print("Data of city value = " , city_value)
         
-        print("Data Type of Attack value = " , str(type(attack_value)))
-        print("Data of Attack value = " , attack_value)
+        # print("Data Type of Attack value = " , str(type(attack_value)))
+        # print("Data of Attack value = " , attack_value)
         
-        print("Data Type of year value = " , str(type(year_value)))
-        print("Data of year value = " , year_value)
+        # print("Data Type of year value = " , str(type(year_value)))
+        # print("Data of year value = " , year_value)
         # year_filter
         year_range = range(year_value[0], year_value[1]+1)
         new_df = df[df["iyear"].isin(year_range)]
@@ -300,7 +303,7 @@ def update_app9_ui(Tabs, month_value, date_value,region_value,country_value,stat
           color="attacktype1_txt",
           hover_name="city", 
           hover_data=["region_txt", "country_txt", "provstate","city", "attacktype1_txt","nkill","iyear","imonth", "iday"],
-          zoom=1
+          zoom=1,
           )                       
         mapFigure.update_layout(mapbox_style="open-street-map",
           autosize=True,
