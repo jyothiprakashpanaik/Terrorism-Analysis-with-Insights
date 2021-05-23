@@ -11,7 +11,7 @@
 
 
 ## Demo
-Vedio Link: [https://youtu.be/7sOmRHea2Uk](https://youtu.be/7smRHea2Uk)
+Vedio Link: [https://youtu.be/7sOmRHe2Uk](https://youtu.be/7smRHea2Uk)
 
 [![](https://i.imgur.com/Ei98Kdk.png?1)](https://youtu.be/7sORHea2Uk)
 ## Wed App Tree
